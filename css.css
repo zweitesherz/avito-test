@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+.title {
+    position: absolute;
+    height: 36px;
+    top: 15px;
+
+    font-family: Roboto Condensed, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.photo_mini {
+    width: 229px;
+    height: 142px;
+    margin-left: 18px !important;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 51px;
+}
+
+.row {
+
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.row2 {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 785px) {
+    .images {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 0;
+    }
+
+
+
+    .row {
+        margin-top: 51px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .photo_mini {
+        width: 280px;
+        height: 171px;
+        margin-left: 20px !important;
+        margin-top: 30px;
+    }
+}
+
+    .modal {
+        display:none;
+        position: absolute;
+        width: 619px;
+        height: 425px;
+        top: 181px;
+        background-color: aqua;
+}
+
+    .close {
+        position: absolute;
+        height: 40px;
+        width: 27px;
+        margin-left: 228px;
+        margin-top: -6px;
+        font-size: 46px;
+        cursor: pointer;
+    }
+
+    .photo_big {
+        width: 331px;
+        height: 205px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .input_name {
+        width: 332px;
+        height: 30px;
+        margin-top: 29px;
+        margin-left: 29px;
+
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+    .input_comm {
+        width: 332px;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 29px;
+
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+    .comments_button {
+        width: 332px;
+        height: 30px;
+        margin-top: 19px;
+        margin-left: 29px;
+        background: #4997D0;
+        border-radius: 3px;
+        /*border: none;*/
+        color: #FFFFFF;
+    }
+
+    .template {
+        width: 237px;
+        height: 363px;
+        margin-top: -378px;
+        margin-left: 371px;
+        /*background: aliceblue;*/
+    }
+
+    .template_comment {
+
+    }
+
