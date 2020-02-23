@@ -19,7 +19,7 @@ for (let j = 0; j < imgArray.length; j += array_size) {
 
 }
 
- console.log(sliced_array);
+ // console.log(sliced_array);
 
 
 let imgContainer = document.getElementById("img");   //див для рядов
@@ -53,23 +53,29 @@ let minis = document.querySelectorAll('.photo_mini');
 for (let k = 0; k < minis.length; k++) {
     let a = minis[k];
     a.setAttribute('data-id', imgArray[k].id);
-    console.log(a.dataset.id)
+    // console.log(a.dataset.id)
 
 }
 
 let addFullPhotoClick = function (index) {
     minis[index].addEventListener('click', function (i) {
          modal[0].style.display = "block";
-        console.log(i.target);
-
-
-
-
+        // console.log(i.target);
 
         let min = i.target;
         let id = min.dataset.id;
         let urlTemplate = 'https://picsum.photos/id/';
 
+
+       let big = modal[0].children;
+        console.log(big[0]);
+        if (big[0] && big[0].className === 'photo_big') {
+
+            big[0].src = urlTemplate + id + '/600/400';
+
+        }
+
+        else {
 
 
             let picture_Big = document.createElement('img');  //создание большой картинки
@@ -77,13 +83,14 @@ let addFullPhotoClick = function (index) {
             modal[0].prepend(picture_Big);
             picture_Big.src = urlTemplate + id + '/600/400';
 
-
+        }
         //закрыть модальное окно
         close[0].onclick = function() {
             modal[0].style.display = "none";
             picture_Big.remove();
 
         };
+
 
 
 
