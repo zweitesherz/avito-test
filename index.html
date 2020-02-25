@@ -22,27 +22,28 @@
 <!--    <img src="https://picsum.photos/id/237/300/200" class="some_img" alt="">-->
 <!--</div>-->
 
-    <div class="modal">
+    <form class="modal" id="auth">
         <span class="close">×</span>
 
         <label>
             <input type="text" placeholder="Ваше имя" class="input_name">
         </label>
         <label>
-            <input type="text" placeholder="Ваш комментарий" class="input_comm">
+            <input type="text" placeholder="Ваш комментарий" class="input_comm" form="auth">
         </label>
         <label>
-            <input type="button" class="comments_button" value="Оставить комментарий">
+            <input type="submit" formmethod="post" class="comments_button" value="Оставить комментарий" form="auth">
         </label>
+
 
 
 <!--        шаблон для комментария-->
         <div class="template">
-            <p class="template_comment"></p>
+<!--            <p class="template_comment"></p>-->
         </div>
 
 
-    </div>
+    </form>
 </div>
 
 

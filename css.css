@@ -152,6 +152,7 @@ header {
         margin-top: -378px;
         margin-left: 371px;
         /*background: aliceblue;*/
+        overflow: hidden;
     }
 
     .template_comment {
