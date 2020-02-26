@@ -58,9 +58,12 @@ for (let k = 0; k < minis.length; k++) {
 let addFullPhotoClick = function (index) {
     minis[index].addEventListener('click', function (i) {
          modal[0].style.display = "block";
-          document.body.style.background = 'rgba(0, 0, 0, 0.7)';
+        let dark = document.getElementById('dark');
+        dark.style.display = 'block';
 
-        // console.log(i.target);
+
+
+
 
         let min = i.target;
         let id = min.dataset.id;
@@ -87,11 +90,18 @@ let addFullPhotoClick = function (index) {
 
 
 
-        //закрыть модальное окно
+
+
+
+
+
+
+            //закрыть модальное окно
         close[0].onclick = function() {
             modal[0].style.display = "none";
             picture_Big.remove();
-            comment.remove()
+            comment.remove();
+            dark.style.display = 'none';
 
         };
 
@@ -100,7 +110,10 @@ let addFullPhotoClick = function (index) {
              }
 
 
-            let xhr2 = new XMLHttpRequest();
+
+
+
+        let xhr2 = new XMLHttpRequest();
             xhr2.open('GET', 'https://boiling-refuge-66454.herokuapp.com/images/' + imgArray[index].id, false);
             xhr2.send();
             let imgArray2 = JSON.parse(xhr2.response);
@@ -113,6 +126,12 @@ let addFullPhotoClick = function (index) {
             let commentText = imgArray2['comments'][0].text;
             template[0].appendChild(comment);
             comment.textContent = commentText;
+
+
+
+
+
+
 
 
 
@@ -130,14 +149,17 @@ let addFullPhotoClick = function (index) {
             console.log(messageText);
             template[0].appendChild(comment);
 
-        });
 
+
+
+
+
+        });
 
     });
 
 
 };
-
 
 
 
