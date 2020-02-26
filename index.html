@@ -22,14 +22,14 @@
 <!--    <img src="https://picsum.photos/id/237/300/200" class="some_img" alt="">-->
 <!--</div>-->
 
-    <form class="modal" id="auth">
+    <form class="modal" id="auth" enctype="multipart/form-data">
         <span class="close">×</span>
 
         <label>
-            <input type="text" placeholder="Ваше имя" class="input_name">
+            <input type="text" placeholder="Ваше имя" class="input_name" form="auth">
         </label>
         <label>
-            <input type="text" placeholder="Ваш комментарий" class="input_comm" form="auth">
+            <input type="text" placeholder="Ваш комментарий" class="input_comm" form="auth" id="txt">
         </label>
         <label>
             <input type="submit" formmethod="post" class="comments_button" value="Оставить комментарий" form="auth">
@@ -41,6 +41,7 @@
         <div class="template">
 <!--            <p class="template_comment"></p>-->
         </div>
+
 
 
     </form>

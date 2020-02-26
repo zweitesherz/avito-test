@@ -58,12 +58,13 @@ for (let k = 0; k < minis.length; k++) {
 let addFullPhotoClick = function (index) {
     minis[index].addEventListener('click', function (i) {
          modal[0].style.display = "block";
-         // document.body.style.background = 'rgba(0, 0, 0, 0.7)';
+          document.body.style.background = 'rgba(0, 0, 0, 0.7)';
 
         // console.log(i.target);
 
         let min = i.target;
         let id = min.dataset.id;
+        console.log(id);
         let urlTemplate = 'https://picsum.photos/id/';
 
 
@@ -109,43 +110,41 @@ let addFullPhotoClick = function (index) {
 
 
             let comment = document.createElement('p');
-            let commentText = imgArray2['comments'][0]['text'];
+            let commentText = imgArray2['comments'][0].text;
             template[0].appendChild(comment);
             comment.textContent = commentText;
 
 
 
-        let input_comm = document.getElementsByClassName('input_comm');
+//                           НОВЫЕ КОММЕНТАРИИ
 
-        modal[0].action = 'https://boiling-refuge-66454.herokuapp.com/images/' + id + '/comments';
-        modal[0].method = 'POST';
-
+        let button = document.getElementsByClassName('comments_button');
+        let field = document.getElementById('txt');
 
         modal[0].addEventListener('submit', function (evt) {
             evt.preventDefault();
 
-            let messageText = input_comm.value;
+            let messageText = field.value; // текст коммента в поле
             let comment = document.createElement('p');
-
-                comment.textContent = messageText;
-
-                template[0].appendChild(comment);
-
-
+            comment.textContent = messageText;
+            console.log(messageText);
+            template[0].appendChild(comment);
 
         });
 
 
-
-
-
-
-
-
-
-
     });
+
+
 };
+
+
+
+
+
+
+
+
 
 
 
