@@ -75,6 +75,23 @@ header {
 }
 
 @media screen and (max-width: 785px) {
+
+    .modal {
+        align-items: center;
+        align-self: center;
+        width: 100% !important;
+        height: 100% !important;
+        top: 0 !important;
+
+    }
+
+    #dark {
+        position: fixed;
+
+    }
+
+
+
     .images {
         display: flex;
         flex-direction: column;
@@ -102,6 +119,67 @@ header {
         margin-left: 20px !important;
         margin-top: 30px;
     }
+
+
+    .photo_big {
+        max-width: 100% !important;;
+        height: auto !important;;
+        display: block !important;;
+        margin: 0 auto !important;;
+        border: none !important;;
+    }
+
+
+    .template {
+        width: 100% !important;
+        height: 36% !important;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
+
+
+
+
+    .input_name {
+
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        border-radius: 3px;
+        max-width: 100%;
+        height: auto !important;
+        display: block;
+        margin: 0 auto !important;
+    }
+
+    .input_comm {
+
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        border-radius: 3px;
+        max-width: 100%;
+        height: auto !important;
+        display: block;
+        margin: 0 auto !important;
+    }
+
+
+    .comments_button {
+        width: 332px;
+        background: #4997D0;
+        border-radius: 3px;
+        color: #FFFFFF;
+        max-width: 100%;
+        height: auto !important;
+        display: block;
+        margin: 0 auto !important;
+
+    }
+
+
+
+
 }
 
     .modal {
