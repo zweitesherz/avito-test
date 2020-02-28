@@ -91,8 +91,8 @@ header {
         align-items: center;
         align-self: center;
         width: 100% !important;
-        height: 537px !important;
         top: 0 !important;
+        height: 100% !important;
 
     }
 
@@ -148,6 +148,8 @@ header {
         margin: 0 auto !important;
         border: none !important;
         max-width: 276px;
+        max-height: 250px !important;
+        overflow: auto !important;
 
     }
 
@@ -196,9 +198,10 @@ header {
 }
 
 @media screen and (max-width: 297px) {
-    .input_name, .input_comm, .comments_button {
+    .input_name, .input_comm, .comments_button, .template {
         width: 100% !important;
     }
+
 }
 
 
