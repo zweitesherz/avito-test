@@ -76,11 +76,22 @@ header {
 
 @media screen and (max-width: 785px) {
 
+    .close {
+        position: absolute;
+        font-size: 46px;
+        cursor: pointer;
+        top: 0;
+        right: 15px;
+    }
+
+
+
+
     .modal {
         align-items: center;
         align-self: center;
         width: 100% !important;
-        height: 100% !important;
+        height: 537px !important;
         top: 0 !important;
 
     }
@@ -131,10 +142,13 @@ header {
 
 
     .template {
-        width: 100% !important;
-        height: 36% !important;
-        margin-top: 0 !important;
-        margin-left: 0 !important;
+        width: 331px !important;
+        height: auto !important;
+        display: block !important;
+        margin: 0 auto !important;
+        border: none !important;
+        max-width: 276px;
+
     }
 
 
@@ -146,10 +160,11 @@ header {
         border: 1px solid #CCCCCC;
         box-sizing: border-box;
         border-radius: 3px;
-        max-width: 100%;
-        height: auto !important;
         display: block;
-        margin: 0 auto !important;
+        /*margin: 0 auto !important;*/
+        max-width: 276px;
+        height: 30px;
+        margin: 20px auto !important;
     }
 
     .input_comm {
@@ -158,10 +173,11 @@ header {
         border: 1px solid #CCCCCC;
         box-sizing: border-box;
         border-radius: 3px;
-        max-width: 100%;
-        height: auto !important;
         display: block;
-        margin: 0 auto !important;
+        /*margin: 0 auto !important;*/
+        max-width: 276px;
+        height: 30px;
+        margin: 20px auto !important;
     }
 
 
@@ -170,17 +186,33 @@ header {
         background: #4997D0;
         border-radius: 3px;
         color: #FFFFFF;
-        max-width: 100%;
-        height: auto !important;
         display: block;
-        margin: 0 auto !important;
+        /*margin: 0 auto !important;*/
+        max-width: 276px;
+        height: 30px;
+        margin: 20px auto !important;
 
     }
-
-
-
-
 }
+
+@media screen and (max-width: 297px) {
+    .input_name, .input_comm, .comments_button {
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .modal {
         display:none;
